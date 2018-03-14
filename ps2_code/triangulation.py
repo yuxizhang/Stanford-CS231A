@@ -182,6 +182,7 @@ if __name__ == '__main__':
     dense_matches = np.load(os.path.join(image_data_dir, 'dense_matches.npy'))
     fundamental_matrices = np.load(os.path.join(image_data_dir,
         'fundamental_matrices.npy'))[0,:]
+    print fundamental_matrices;
 
     # Part A: Computing the 4 initial R,T transformations from Essential Matrix
     print '-' * 80
